@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Text&Voice Stats</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="wrapper">
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="chart usage-overview">
+              <h3>Usage</h3>
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <div class="chart usage-detail">
+              <h3>Message Status</h3>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 hidden-md hidden-sm hidden-xs">
+            <div class="chart usage-timeview">
+              <h3>Message History</h3>
+              <div class="btn-group date-range-selector" role="group" aria-label="...">
+                <button type="button" class="btn btn-primary" data="30d">Last 30 days</button>
+                <button type="button" class="btn btn-default" data="12m">Last 12 months</button>
+                <button type="button" class="btn btn-default" data="all">All data</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- /#page-content-wrapper -->
+  </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.ajax.fake.js"></script>
+    <script src="js/webservices.fake.js"></script>
+    <script src="js/d3.js"></script>
+    <script src="js/chart.js"></script>
+    <script src="js/usage-overview.js"></script>
+    <script src="js/usage-detail.js"></script>
+    <script src="js/usage-timeview.js"></script>
+    <script type="text/javascript">
+      window.db.textVoiceStats.drawUsageOverview();
+      window.db.textVoiceStats.drawUsageDetail();
+      window.db.textVoiceStats.drawUsageTimeview();
+    </script>
+</body>
+
+</html>

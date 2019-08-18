@@ -1,0 +1,166 @@
+/*chart-wide style*/
+* {
+  font-family: Avenir, Arial, sans-serif;
+  color: #555;
+}
+
+body {
+  padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+h3 {
+	text-align: center;
+	padding-top: 10px;
+  margin: 30px;
+}
+
+.chart {
+	background-color: #fff;
+  margin: 0 20px 20px 20px;
+  border: 1px solid #ccc;
+  border-radius: .6667em;
+  text-align: center;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+svg {
+	display: block;
+	margin: auto;
+}
+
+.text {
+  fill: #6bcbe8;
+}
+
+.voice {
+  fill: #2da8e0;
+}
+
+.unused {
+  fill: #ededed;
+}
+
+.text-hover {
+  fill: #63c2cc;
+}
+
+.voice-hover {
+  fill: #299cc4;
+}
+
+.unused-hover {
+  fill: #d1d2d1;
+}
+
+.no-mouse {
+  pointer-events: none;
+}
+
+.btn {
+  opacity: 0;
+}
+
+/*svg-wide style*/
+.axis path,
+.axis line {
+	fill: none;
+	stroke: #888;
+	shape-rendering: crispEdges;
+}
+
+.axis text {
+	font-family: sans-serif;
+	font-size: 10px;
+}
+
+.axis.label {
+	font-size: 10px;
+	fill: #888;
+}
+
+.y.axis line {
+  stroke: #bbb;
+  opacity: 0.7;
+}
+
+.y.axis path {
+  stroke-width: 0;
+}
+
+.selection-line {
+  stroke: #555;
+  opacity: 0;
+}
+
+.selection-bar {
+  opacity: 0;
+}
+
+/*usage overview style*/
+.center-label {
+  font-size: 1.2em;
+  font-weight: 400;
+  text-anchor: middle;
+  opacity: 0;
+}
+
+.center-label.number {
+  font-size: 2em;
+  font-weight: 800;
+}
+
+.center-label.subtitle {
+  opacity: 0;
+}
+
+/*usage detail styles*/
+.background-bar {
+  fill: #ededed;
+  opacity: 0;
+}
+
+.bar-label {
+  opacity: 0;
+  text-anchor: end;
+}
+
+.value {
+  opacity: 0;
+  fill: #555;
+}
+
+.pct {
+  opacity: 0;
+}
+
+/*usage timeview styles*/
+.date-range-selector {
+  margin: 0 auto; 
+}
+
+.dot {
+  opacity: 0;
+  fill: #fff;
+  stroke: #000;
+  stroke-width: 1px;
+}
+
+.tooltip-background {
+  fill: #fff;
+  fill-opacity: 0;
+  stroke: #888;
+}
+
+.timestamp {
+  fill: #555;
+  text-anchor: middle;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.legend-text {
+  fill: #555;
+}
